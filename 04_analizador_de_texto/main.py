@@ -17,3 +17,7 @@ print(palabra[4])
 frase = "En teoría, la teoría y la práctica son los mismos. En la práctica, no lo son."
 
 print(frase.index("práctica"))
+#Practica 3
+#Encuentra y muestra en pantalla el índice de la última aparición de la palabra "práctica"
+frase = "En teoría, la teoría y la práctica son los mismos. En la práctica, no lo son."
+print(frase.rindex("práctica"))
