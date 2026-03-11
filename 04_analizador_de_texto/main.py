@@ -31,3 +31,17 @@ print(fragmento)
 print(palabras[2:])
 
 print(palabras[2:10:2])
+
+#Ejercicio 1
+#Extrae la primera palabra de la siguiente frase utilizando slicing, y muéstrala en pantalla
+#"Controlar la complejidad es la esencia de la programación"
+frase = "Controlar la complejidad es la esencia de la programación"
+
+print(frase[0:9])
+
+#Ejercicio 2
+#Toma cada tercer caracter empezando desde el noveno hasta el final de la frase, e imprime el resultado.
+#"Nunca confíes en un ordenador que no puedas lanzar por una ventana"
+frase = "Nunca confíes en un ordenador que no puedas lanzar por una ventana"
+
+print(frase[8:66:3])
