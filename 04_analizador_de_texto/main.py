@@ -21,3 +21,13 @@ print(frase.index("práctica"))
 #Encuentra y muestra en pantalla el índice de la última aparición de la palabra "práctica"
 frase = "En teoría, la teoría y la práctica son los mismos. En la práctica, no lo son."
 print(frase.rindex("práctica"))
+
+#SubString
+palabras = "ABCDEFGHIJKLMN"
+
+fragmento = palabras[2:5]
+print(fragmento)
+
+print(palabras[2:])
+
+print(palabras[2:10:2])
