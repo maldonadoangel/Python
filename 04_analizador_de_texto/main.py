@@ -45,3 +45,16 @@ print(frase[0:9])
 frase = "Nunca confíes en un ordenador que no puedas lanzar por una ventana"
 
 print(frase[8:66:3])
+#Ejercicio 3
+#Invierte la posición de todos los caracteres de la siguiente frase y muestra el resultado en pantalla.
+#"Es genial trabajar con ordenadores. No discuten, lo recuerdan todo y no se beben tu cerveza"
+frase = "Es genial trabajar con ordenadores. No discuten, lo recuerdan todo y no se beben tu cerveza"
+print(frase[::-1])
+#Metodos String
+texto = "Este es el texto de Angel"
+print(texto.upper())
+#Metodo lower para quizar la mayuscular y transformarlo
+texto_mayuscula = "SOY UN TEXTO EN MAYUSCULA"
+print(texto_mayuscula.lower())
+#metodo split para cortar el texto en varias partes y mostrarlo en un arreglo
+print(texto.split())
