@@ -58,3 +58,7 @@ texto_mayuscula = "SOY UN TEXTO EN MAYUSCULA"
 print(texto_mayuscula.lower())
 #metodo split para cortar el texto en varias partes y mostrarlo en un arreglo
 print(texto.split())
+#Practica 1
+frase = "Especialmente en las comunicaciones electrónicas, la escritura enteramente en mayúsculas equivale a gritar."
+
+print(frase.upper())
