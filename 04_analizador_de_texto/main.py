@@ -77,3 +77,8 @@ frase = "Si la implementación es difícil de explicar, puede que sea una mala i
 resultado = frase.replace("difícil","fácil").replace("mala","buena")
 print(resultado)
 #Propiedades del string
+palabra = "Kira"
+print(palabra*5)
+#Ejercicio #1 sobre propiedades
+resultado = "Repetición" * 15
+print(resultado)
