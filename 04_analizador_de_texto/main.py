@@ -97,3 +97,10 @@ correo_usuario = input("Ingresa tu correo electronico: ")
 
 print(f"Este es tu correo sin espacios y todo en minuscula:{correo_usuario.strip().lower()}")
 
+#Ejercicio 3 tags hacer un programa que agarre una lista y la convierta en un string agregandolos en un texto
+lista_objetos = ["Gato", "Kira", "Morales"]
+print(lista_objetos)
+
+unir_lista = " , ".join(lista_objetos)
+print(unir_lista)
+print(type(unir_lista))
