@@ -89,3 +89,11 @@ mis recuerdos de viaje,
 entre las lluvias"""
 
 print("agua" not in frase)
+
+#Ejercicio #2 un usuario nos brinda su correo, tienes que asegurarte de quitar los espaacios en blanco
+# y que no coloque mayusculas
+
+correo_usuario = input("Ingresa tu correo electronico: ")
+
+print(f"Este es tu correo sin espacios y todo en minuscula:{correo_usuario.strip().lower()}")
+
