@@ -107,8 +107,13 @@ print(type(unir_lista))
 
 
 #Listas
-
+#Buena practica para el desempaquetado (unpacking)
 registro = ["Juan", "Pérez", 28, "Desarrollador"]
 # Buena práctica (Senior: Unpacking)
 nombre, apellido, edad, puesto = registro
 print(f"Empleado: {nombre}, Cargo: {puesto}")
+
+# Tip Pro: Usar el asterisco (*) para capturar el resto
+puntuaciones = [100, 85, 90, 70, 60]
+mejor_nota, *otras_notas, peor_nota = puntuaciones
+# mejor_nota = 100, peor_nota = 60, otras_notas = [85, 90, 70]
