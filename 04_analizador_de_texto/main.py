@@ -116,4 +116,32 @@ print(f"Empleado: {nombre}, Cargo: {puesto}")
 # Tip Pro: Usar el asterisco (*) para capturar el resto
 puntuaciones = [100, 85, 90, 70, 60]
 mejor_nota, *otras_notas, peor_nota = puntuaciones
+print(puntuaciones)
 # mejor_nota = 100, peor_nota = 60, otras_notas = [85, 90, 70]
+
+#Filtrato y transformación
+ordenes = [
+    {"id": "ORD-01", "monto": 50},
+    {"id": "ORD-02", "monto": 150},
+    {"id": "ORD-03", "monto": 200}
+]
+
+# [resultado_final para elemento en lista si condicion]
+vips = [o["id"] for o in ordenes if o["monto"] > 100]
+
+print(vips)
+
+#Ejercicio de list comprehesion
+
+#Supongamos que tienes una lista de temperaturas en Celsius: temps_c = [0, 20, 30, 100].
+# ¿Podrías crear una List Comprehension que las convierta a Fahrenheit?
+# La fórmula es: $F = (C X 9/5) + 32
+
+temps_c = [0, 20, 30, 100]
+
+# [expresión_matemática for elemento in lista]
+temps_f = [(c * 9/5) + 32 for c in temps_c]
+
+print(f"Original (C): {temps_c}")
+print(f"Convertido (F): {temps_f}")
+# Resultado: [32.0, 68.0, 86.0, 212.0]
