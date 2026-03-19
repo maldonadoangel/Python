@@ -104,3 +104,11 @@ print(lista_objetos)
 unir_lista = " , ".join(lista_objetos)
 print(unir_lista)
 print(type(unir_lista))
+
+
+#Listas
+
+registro = ["Juan", "Pérez", 28, "Desarrollador"]
+# Buena práctica (Senior: Unpacking)
+nombre, apellido, edad, puesto = registro
+print(f"Empleado: {nombre}, Cargo: {puesto}")
