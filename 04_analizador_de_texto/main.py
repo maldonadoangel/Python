@@ -145,3 +145,9 @@ temps_f = [(c * 9/5) + 32 for c in temps_c]
 print(f"Original (C): {temps_c}")
 print(f"Convertido (F): {temps_f}")
 # Resultado: [32.0, 68.0, 86.0, 212.0]
+
+#Si tienes una lista de precios: precios = [100, 200, 300].
+#Y quieres sumarle el IVA (supongamos 16%) a cada uno.
+precios = [100, 200, 300]
+precio_con_iva = map(lambda p: round(p * 1.16, 2), precios)
+print(list(precio_con_iva))
