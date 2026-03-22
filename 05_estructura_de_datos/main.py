@@ -59,3 +59,9 @@ for elemento in range(10):
     elementos_al_cuadrado.append(elemento**2)
 print(f"Los elementos fueron elevados al cuadrado: {elementos_al_cuadrado}")
 
+#otra forma de hacerlo con lambda, listas y map
+elementos_al_cuadrado_lambda = list(map(lambda e: e**2, range(10)))
+print(elementos_al_cuadrado_lambda)
+#otra forma aun mas sencillo
+elementos = [x**2 for x in range(10)]
+print(elementos)
