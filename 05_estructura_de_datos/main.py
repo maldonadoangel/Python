@@ -27,3 +27,13 @@ print(frutas)
 #pop, se utiliza para eliminar el ultimo elemento
 frutas.pop()
 print(frutas)
+
+#Usar listas como pilas
+stack = [1,2,3,4]
+stack.append(5)
+#Se agrega el elemento en la cima de la lista
+print(stack)
+#Sacamos el ultimo elemento agregado, tal y como
+#funciona el stack
+print(stack.pop())
+print(stack)
