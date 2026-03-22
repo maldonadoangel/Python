@@ -1,3 +1,4 @@
+from collections import deque
 #Estructura de datos
 #Listas
 frutas = ['naranja', 'manzana', 'pera', 'banana', 'kiwi', 'manzana', 'banana']
@@ -37,3 +38,17 @@ print(stack)
 #funciona el stack
 print(stack.pop())
 print(stack)
+#Utilizar listas como una cola es posible
+#pero no es lo mas eficiente para este propocito.
+#Ya que hay que agregar y sacar del final de la lista.
+#pero insertar o sacar del comienzo
+#se recomienda utilizar from collections import deque
+queue = deque(['Angel', 'Hernan', 'Morales', 'Maldonado'])
+queue.append('Jose')
+queue.append('Genesis')
+print(queue)
+#Quitamos al primero de la lista ya que fue el primero en entrar
+#Sera el primero en salir
+print(f"El primero en salir en la cola: {queue.popleft()}")
+print(f"El segundo en salir en la cola: {queue.popleft()}")
+print(f"Los que quedan en la lista: {queue}")
