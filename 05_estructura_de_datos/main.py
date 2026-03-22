@@ -52,3 +52,10 @@ print(queue)
 print(f"El primero en salir en la cola: {queue.popleft()}")
 print(f"El segundo en salir en la cola: {queue.popleft()}")
 print(f"Los que quedan en la lista: {queue}")
+#comprension de listas
+#Los elementos agregados a la lista se elevaran al cuadrado
+elementos_al_cuadrado = []
+for elemento in range(10):
+    elementos_al_cuadrado.append(elemento**2)
+print(f"Los elementos fueron elevados al cuadrado: {elementos_al_cuadrado}")
+
