@@ -91,3 +91,7 @@ print(lista_sin_negativos)
 #obtener los valores absolutos del vector o lista
 lista_absoluta = [abs(e) for e in vec]
 print(lista_absoluta)
+#Limpieza del vector o lista, quitando los espacios vacios
+fruta_fresca = ['  banana', '  loganberry ', 'passion fruit  ']
+fruta_fresca_limpia = [fruta.strip() for fruta in fruta_fresca]
+print(fruta_fresca_limpia)
