@@ -65,3 +65,29 @@ print(elementos_al_cuadrado_lambda)
 #otra forma aun mas sencillo
 elementos = [x**2 for x in range(10)]
 print(elementos)
+#Una lista de comprensión consiste de corchetes rodeando una expresión 
+# seguida de la declaración for y luego cero o más declaraciones for o if. 
+# El resultado será una nueva lista que sale de evaluar la expresión en el 
+# contexto de los for o if que le siguen. Por ejemplo, esta lista de comprensión 
+# combina los elementos de dos listas si no son iguales:
+lista_comprension = [(x,y) for x in [1,2,3] for y in [3,1,4] if x != y]
+print(lista_comprension)
+#lo anterior es lo mismo que esto:
+combinado = []
+for x in [1,2,3]:
+    for y in [3,1,4]:
+        if x != y:
+            combinado.append((x,y))
+print(combinado)
+
+#crear una neuva lista donde se multiplican por dos los numeros
+# de la lista original
+vec = [-4, -2, 0, 2, 4]
+nueva_lista = [x*2 for x in vec]
+print(nueva_lista)
+#de la lista original excluir los negativos
+lista_sin_negativos = [elemento for elemento in vec if elemento >=0]
+print(lista_sin_negativos)
+#obtener los valores absolutos del vector o lista
+lista_absoluta = [abs(e) for e in vec]
+print(lista_absoluta)
