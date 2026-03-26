@@ -112,3 +112,29 @@ for i in range(4):
         transposed_row.append(row[i])
     transposed.append(transposed_row)
 print(transposed)
+
+matriz_original = [
+    [1,2,3,4],
+    [5,6,7,8],
+    [9,10,11,12]
+]
+
+matriz_transpuesta = [[fila[i] for fila in matriz_original] for i in range(4)]
+print(matriz_transpuesta)
+
+#Sets
+basket = {'Apple', 'Orange', 'Apple', 'Pear', 'Orange', 'Banana'}
+print(basket)
+#Validar si cierta fruta se encuentra en el set
+print('Orange' in basket)
+#Palabras unicas en una palabra
+palabra = set('Abracadabra')
+print(palabra)
+usuarios = [
+    {"id": 1, "nombre": "Ana", "rol": "Admin"},
+    {"id": 5, "nombre": "Betto", "rol": "User"},
+    {"id": 9, "nombre": "Carla", "rol": "User"}
+]
+nombres = [usuario["nombre"] for usuario in usuarios]
+# Resultado: ['Ana', 'Betto', 'Carla']
+print(nombres)
